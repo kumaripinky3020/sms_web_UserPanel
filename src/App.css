@@ -1,0 +1,555 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  
+}
+
+ul {
+  list-style: none;
+}
+
+.ct_show_eye {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 15px;
+  
+}
+#ct_logout_confirm h4 {
+  font-size: 24px;
+  text-align: center;
+}
+.modal-backdrop{
+  
+}
+/* .path {
+  color: whitesmoke !important;
+} */
+.ct_close_btn{
+  background-color: red!important;
+  border-color: red!important;
+}
+#ct_logout_confirm button.btn-close {
+  font-size: 14px;
+}
+.ct_green_text {
+  color: #16C766;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #060607;
+  height: 100vh;
+
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: none;
+}
+
+/* login page css S */
+.ct_login_main_bg {
+  /* background-color: #000; */
+  background-image: url('../src/img/login_bg_image.png');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.ct_bg_img_2 {
+  background-image: url('../src/img/login_bg_image.png');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.ct_login_form {
+  background-color: #ffffff0f;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  padding: 30px;
+
+}
+
+.ct_login_form .ct_input-group {
+  position: relative;
+}
+
+.ct_login_form .input {
+  border: solid 1.5px #9e9e9e;
+  border-radius: 10px;
+  background: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #fff;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  /* font-size: 16px; */
+}
+
+.ct_login_form .user-label {
+  position: absolute;
+  left: 15px;
+  color: #ccc;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ct_login_form .input:focus,
+.ct_login_form input:valid {
+  outline: none;
+  border: 1.5px solid #1a73e8;
+}
+
+img.ct_login_logo {
+  width: 100px;
+  margin: auto;
+  display: block;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.ct_login_form .input:focus~label,
+.ct_login_form input:valid~label {
+  transform: translateY(-50%) scale(1);
+  background-color: #1f1e24;
+  padding: 0 .2em;
+  color: #fff;
+  border-radius: 5px;
+  padding: 2px 8px;
+  line-height: 0px;
+}
+
+.ct_custom_btn {
+  text-decoration: none;
+  font-family: inherit;
+  text-align: center;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #1464F4;
+  background-color: #1464F4;
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.ct_green_btn {
+  border: 2px solid #16C766;
+  background-color: #16C766;
+}
+
+.ct_btn_radius_100 {
+  border-radius: 100px;
+}
+
+.ct_custom_btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #fff;
+  height: 150px;
+  width: 180%;
+  border-radius: 50%;
+  color: #333;
+}
+
+.ct_custom_btn:hover {
+  color: #333;
+}
+
+.ct_custom_btn:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+}
+
+.ct_custom_btn:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+/* .ct_custom_btn:active:before {
+  background: #092daf;
+  transition: background 0s;
+ } */
+
+/* login page css E */
+
+
+/* my wallet css S */
+.ct_grey_bg_clr {
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+.ct_grey_svg path {
+  fill: #aaa;
+}
+
+.ct_middle_logo img {
+  width: 50px;
+}
+
+header {
+  padding: 10px 30px;
+  border-bottom: 1px solid rgb(255 255 255 / 20%);
+}
+
+.ct_transparent_btn {
+  padding: 6px 15px;
+  border-radius: 100px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-decoration: none;
+  position: relative;
+  transition: 0.4s ease all;
+}
+
+.ct_transparent_btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+
+.ct_card {
+  background-color: #1C1D20;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.ct_card h4 {
+  color: #fff;
+}
+
+.ct_card p {
+  margin-bottom: 0px;
+  color: #fff;
+}
+
+.ct_table {
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.ct_table thead {
+  background-color: #EFEFEF;
+  color: #AAAAAB;
+}
+
+.ct_table thead tr th {
+  padding-inline: 15px;
+  font-weight: 500;
+  border: none;
+  vertical-align: middle;
+}
+
+.ct_table tbody tr {
+  vertical-align: middle;
+}
+
+.ct_table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.ct_plus_icon {
+  width: 40px;
+  height: 40px;
+  font-size: 12px;
+  border: 1px solid #EFEFEF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 100px;
+  line-height: 0px;
+  font-weight: 700;
+  background-color: #EFEFEF;
+}
+
+.ct_fw_600 {
+  font-weight: 500;
+}
+
+.ct_text_opacity {
+  opacity: 0.8;
+}
+
+
+/* Add Funds Css S */
+
+.ct_white_bg {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.09);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+
+.ct_border_btm {
+  border-bottom: 1px solid #EFEFEF;
+}
+
+
+.radio-buttons {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.radio-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-button input[type="radio"] {
+  display: none;
+}
+
+.radio-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #aaa;
+  position: relative;
+  /* margin-right: 10px; */
+}
+
+.radio-circle::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.2s ease-in-out;
+}
+
+.radio-button input[type="radio"]:checked+.radio-circle::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.radio-button:nth-of-type(1) input[type="radio"]:checked+.radio-circle::before {
+  background-color: #fff;
+}
+
+.radio-button input[type="radio"]:checked+.radio-circle {
+  background-color: #1464F4;
+  border-color: #1464F4;
+}
+
+.radio-button:hover .radio-circle {
+  border-color: #1464F4;
+}
+
+.radio-button:hover input[type="radio"]:checked+.radio-circle::before {
+  background-color: #fff;
+}
+
+.ct_card_dtl,
+.ct_card_info_main,
+.ct_responsive_flex {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ct_card_icon {
+  width: 40px;
+  height: 40px;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.ct_fw_700 {
+  font-weight: 600;
+}
+
+.ct_card_num p,
+.ct_white_space_nowrape {
+  white-space: nowrap;
+}
+
+.ct_py_16 {
+  padding-block: 16px;
+}
+
+.ct_7C7D7E_text_clr {
+  color: #7C7D7E;
+}
+
+input.ct_half_input.form-control {
+  width: 200px;
+  height: 39px;
+  background-color: #f9f9f9;
+  border: none;
+  font-weight: 600;
+  border-radius: 0px;
+}
+
+.ct_dollar_sign {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-weight: 600;
+}
+
+.ct_indent_20 {
+  text-indent: 20px;
+}
+
+.ct_rounded_btn {
+  border-radius: 100px;
+  line-height: 40px;
+}
+
+.ct_cancel_btn {
+  background-color: transparent;
+  color: #1464F4;
+  border-color: #1464F4;
+}
+
+.ct_cancel_btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #1464F4;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+  color: #333;
+}
+
+.ct_cancel_btn:hover {
+  color: #fff;
+}
+
+.ct_line_height_0 {
+  line-height: 0px;
+}
+
+.ct_34363A_text_clr {
+  color: #34363A;
+}
+
+.ct_py_10 {
+  padding-block: 10px;
+}
+
+.ct_cvv_icon_position {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.form-control.ct_input_style {
+  height: 40px;
+  background-color: #f9f9f9;
+  border: 0px;
+  border-bottom: 1px solid #E1E1E1;
+  border-radius: 0px;
+  font-weight: 500;
+  appearance: auto;
+}
+
+.ct_blue_text {
+  color: #1464F4;
+}
+
+.ct_info_yellow_bg {
+  border-radius: 6px;
+  background: #FFF2DA;
+  padding: 8px 20px 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin-top: 20px;
+}
+
+.ct_info_yellow_bg p {
+  font-size: 13px;
+}
+
+.ct_table td,
+.ct_table th {
+  white-space: nowrap;
+}
+
+@media screen and (max-width:767px) {
+  .ct_responsive_flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ct_bg_img_2 {
+    height: auto;
+  }
+}
+
+@media screen and (max-width:575px) {
+  header {
+    padding-inline: 15px;
+  }
+
+  .ct_transparent_btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .ct_responsive_btn {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.ct_select_option option {
+  color: #333;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+a {
+  text-decoration: none;
+}
+a {
+  color: #0d6efd 
+  /* text-decoration: underline !important; */
+}
+.ct_fs_32{
+  font-size: 32px;
+}
+.ct_fs_24{
+  font-size: 24px;
+}
